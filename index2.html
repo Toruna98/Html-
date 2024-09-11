@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>Form tag</title>
+</head>
+<body>
+    <h1>FORMS</h1> 
+    <form action="">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" value="Toruna Chakma"> <br/> <br/>
+
+        <label for="mname">Mobile No:</label> 
+        <input type="text" id="mname" name="mname" placeholder="+008"> <br/><br/>
+
+        <label for="pname">Password:</label> 
+        <input type="password" id="pname" name="pname" placeholder="***"> <br/><br/>
+
+        <label for="ename">Email Address:</label>
+        <input type="text" id="ename" name="ename" placeholder="gmail.com"> <br/><br/>
+
+        <label for="nname">Number of person:</label> 
+        <input type="number" id="nname" name="nname" placeholder="123" min="1" max="10" > <br/><br/>
+
+        <label for="dname">Date:</label> 
+        <input type="date" id="dname" name="dname"> <br/><br/>
+
+        <label for="dtime">Datetime:</label> 
+        <input type="datetime-local" id="dtime" name="dtime"> <br/><br/>
+
+        <label for="mnt">Month:</label> 
+        <input type="month" id="mnt" name="mnt"> <br/><br/>
+
+        <label for="wname">Week:</label> 
+        <input type="week" id="wname" name="wname"> <br/><br/>
+
+        <label for="tname">Time:</label>
+        <input type="time" id="tname" name="tname"> <br/><br/>
+
+        <label for="cname">Color:</label> 
+        <input type="color" id="cname" name="cname"> <br/><br/>
+         
+        <label for="cbox">Do you want money?</label> <br/>
+        <input type="checkbox" id="cbox" name="cbox"> Yes
+        <input type="checkbox" id="cbox" name="cbox">No <br/><br/>
+        
+        <label for="r">Gender:</label> <br/>
+        <input type="radio" id="r" name="r"> 
+        <label>Male</label> 
+        <input type="radio" id="r" name="r"> 
+        <label>Female</label> 
+        <input type="radio" id="r" name="r">
+        <label>Other</label><br/><br/>
+        
+        <label for="mfile">My File:</label> 
+        <input type="file" id="mfile" name="mfile"> <br/><br/>
+
+        <label for="lname">Last name:</label> <br/>
+        <input type="text" id="lname" name="lname"><br/> 
+        <input type="submit"onclick="alert('Ok')"  value="Submit"> 
+        <input type="reset" onclick="alert('Delete')" value="Reset"> <br/> <br/>
+
+        <label for="bname">Button:</label>
+        <input type="button" onclick="alert('Hello!')" value="Click me"> <br/><br/>
+
+        <label for="pic">Picture:</label><br/>
+        <input type="image" src="tea.jpg" alt="subit" height="50" width="50"> <br/>
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit"><br><br>
+
+        <label for="gname">Google Search:</label> 
+        <input type="search" id="gname" name="gname"><br/>  
+    </form> 
+    <hr>
+    <fieldset>
+        <legend>Section:02</legend>
+    <form
+        oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <label for="a">A:</label>
+        <input type="range" id="a" name="a" value="50"><br/><br/>
+        <label for="b">B:</label>
+        <input type="range" id="b" name="b" value="50"><br/><br/>
+        <output name="result" for="a b">100</output><br/><br/>
+
+        <label for="dname">Progess:</label>
+        <progress id="progress" value="70" max="100"></progress><br/><br/>
+        <label for="name">Meter:</label>
+        <meter id="meter" value="70" max="100"></meter><br/><br/>
+
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" id="browser" name="browser">
+        <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+        </datalist><br/><br/>
+
+        <label for="option">Choose a phone:</label>
+        <select name="option" id="option">
+            <option value="Nokia">NOKIA</option>
+            <option value="redmi">REDMI</option>
+            <option value="oppo">OPPO</option>
+            <option value="sumsung">SUMSUNG</option>
+        </select><br/><br/>
+
+        <label for="textarea">Khagrachari</label><br/>
+        <textarea name="textarea" id="textarea" rows="4" cols="50">Khagrachari is a district in the Chittagong Division of Southeastern Bangladesh. It is a part of the Chittagong Hill Tracts region.</textarea><br/><br/>
+        <label for="sname"></label>
+        <input type="submit" value="Submit" onclick="alert('Done')">
+        
+</form>
+</fieldset>
+</body> 
+</html>
